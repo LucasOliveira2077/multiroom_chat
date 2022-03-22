@@ -1,0 +1,26 @@
+{
+  "name": "multiroom_chat",
+  "version": "1.0.0",
+  "description": "chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasOliveira2077/multiroom_chat.git"
+  },
+  "author": "Lucas de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasOliveira2077/multiroom_chat/issues"
+  },
+  "homepage": "https://github.com/LucasOliveira2077/multiroom_chat#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "consign": "^0.1.6",
+    "ejs": "^2.5.6",
+    "express": "^4.17.3",
+    "express-validator": "^3.2.0"
+  }
+}
