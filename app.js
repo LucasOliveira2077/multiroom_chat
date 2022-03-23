@@ -6,4 +6,14 @@ let server = app.listen(80, () => {
     console.log('servidor ligado')
 })
 
-require('socket.io').listen(server);
+let io = require('socket.io').listen(server);
+
+//criar uma conexão pro websocket setando uma variavel io para o cliente receber o websocket
+io.on('connection', (socket) =>{
+    console.log('usuário conectou')
+
+    socket.on('disconnect', () =>{
+        console.log('O usuário desconectou')
+
+    })
+}) 
