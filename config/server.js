@@ -5,7 +5,7 @@ let express = require('express')
 //importar o modulo consigno do framework
 let consign = require('consign')
 
-//importar o body-parser
+//importar o modulo body-parser
 let bodyParser = require('body-parser')
 
 // importar o modulo do express validators
@@ -16,7 +16,7 @@ let app = express()
 
 //setar as variaveis 'view engine' e 'views' do express
 app.set('view engine', 'ejs')
-app.set('view', './app/views')
+app.set('views', './app/views')
 
 //midlewares:
 //configurar middleware express.static 

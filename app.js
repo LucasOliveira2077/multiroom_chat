@@ -2,6 +2,8 @@
 let app = require('./config/server')
 
 //parametrizamos a porta de escuta padrao dos navegadores
-app.listen(80, () => {
+let server = app.listen(80, () => {
     console.log('servidor ligado')
 })
+
+require('socket.io').listen(server);
